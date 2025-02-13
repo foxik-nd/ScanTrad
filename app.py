@@ -21,7 +21,8 @@ def load_translation_models():
     lang_detector = pipeline("text-classification", model="papluca/xlm-roberta-base-language-detection")
     tokenizer = AutoTokenizer.from_pretrained("facebook/nllb-200-distilled-600M", src_lang="eng_Latn")
     model = AutoModelForSeq2SeqLM.from_pretrained("facebook/nllb-200-distilled-600M")
-    return lang_detector, tokenizer, model
+    return lang_detector, tokenizer, model 
+
 
 # Détection des bulles et extraction du texte
 
